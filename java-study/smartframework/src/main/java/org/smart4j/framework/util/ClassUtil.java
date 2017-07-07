@@ -74,4 +74,12 @@ public final class ClassUtil {
         return classSet;
     }
 
+    public static void addClass(Set<Class<?>> classSet, String packagePath, String packageName) {
+
+    }
+
+    public static void doAddClass(Set<Class<?>> classSet, String packageName) {
+
+    }
+
 }
