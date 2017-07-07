@@ -4,14 +4,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smart4j.chapter2.helper.DatabaseHelper;
 import org.smart4j.chapter2.model.Customer;
-import org.smart4j.chapter2.util.PropsUtil;
-import org.smart4j.chapter2.util.StringUtil;
 
-import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Properties;
 
 /**
  * Author: LiTing
