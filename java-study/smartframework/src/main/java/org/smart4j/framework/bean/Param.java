@@ -1,7 +1,6 @@
 package org.smart4j.framework.bean;
 
 import org.smart4j.framework.util.CastUtil;
-import org.smart4j.framework.util.ClassUtil;
 
 import java.util.Map;
 
