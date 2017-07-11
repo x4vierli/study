@@ -75,7 +75,7 @@ public final class ClassHelper {
      * @return
      */
 
-    public static Set<Class<?>> getClassSetByAnnotation(Class<? extends Annotation> annotationClass)a {
+    public static Set<Class<?>> getClassSetByAnnotation(Class<? extends Annotation> annotationClass) {
         Set<Class<?>> classSet = new HashSet<>();
         for (Class<?> cls : CLASS_SET) {
             if (cls.isAnnotationPresent(annotationClass)) {
