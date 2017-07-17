@@ -1,6 +1,7 @@
 import scala.collection.mutable.ArrayBuffer
 import scala.collection.JavaConversions.bufferAsJavaList
 import scala.collection.mutable.Map
+import scala.collection.JavaConversions.mapAsScalaMap
 
 def abs(x: Double) = if (x >= 0) x else -x
 
@@ -59,4 +60,21 @@ scores += ("aa" -> 100, "bb" -> 101)
 
 scores -= "aa"
 val testAA = scores.getOrElse("aa", 0)
-println(testAA)
+
+val newScores = scores + ("Bob" -> 999, "Fred" -> 998)
+
+scores.keySet
+for (v <- scores.values) println(v)
+
+val olalaScores: scala.collection.mutable.Map[String, Int] = new java.util.TreeMap[String, Int]
+
+val t = (1, 3.14, "Fred")
+val second = t._2
+println(second)
+
+"New York".partition(_.isUpper)
+
+val symbols = Array("<", "-", ">")
+val counts = Array(2, 10, 2)
+val pairs = symbols.zip(counts)
+for ((s, n) <- pairs) Console.print(s * n)
