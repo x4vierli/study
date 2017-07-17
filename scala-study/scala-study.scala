@@ -1,4 +1,6 @@
 import scala.collection.mutable.ArrayBuffer
+import scala.collection.JavaConversions.bufferAsJavaList
+import scala.collection.mutable.Map
 
 def abs(x: Double) = if (x >= 0) x else -x
 
@@ -39,3 +41,22 @@ val bb = ArrayBuffer(1, 7, 2, 9)
 val bbStr = bb.mkString("<", ",", ">")
 
 val matrix = Array.ofDim[Double](3, 4)
+
+val scores = Map("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8)
+
+val muScores = ("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8)
+
+val testHashMap = new scala.collection.mutable.HashMap[String, Int]
+
+val bobScore = scores("Bob")
+
+val bobScore1 = if (scores.contains("Bob")) scores("Bob") else 0
+
+scores("Bob") = 10
+val bobScore2 = scores.getOrElse("Bob", 0)
+
+scores += ("aa" -> 100, "bb" -> 101)
+
+scores -= "aa"
+val testAA = scores.getOrElse("aa", 0)
+println(testAA)
