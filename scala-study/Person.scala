@@ -1,6 +1,3 @@
-class Person {
-    var age = 0
+class Message {
+    val timeStamp = new java.util.Date
 }
-
-var fred = new Person
-println(fred.age)
