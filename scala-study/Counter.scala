@@ -9,3 +9,5 @@ class Counter {
 val myCounter = new Counter 
 myCounter.increment()
 println(myCounter.current)
+
+private[this] var value = 0
