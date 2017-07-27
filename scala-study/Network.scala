@@ -21,4 +21,9 @@ val fred = chatter.join("Fred")
 val wilma = chatter.join("Wilma")
 fred.contacts += wilma
 val barney = myFace.join("Barney")
-fred.contacts += barney
+// fred.contacts += barney
+
+object Account {
+    private var lastNumber = 0
+    def newUniqueNumber() = { lastNumber += 1; lastNumber }
+}
